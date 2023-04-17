@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ExpressCourse</string>
+    <string name="hello">Поздороваться</string>
+    <string name="counter">Считаем ворон</string>
+</resources>
