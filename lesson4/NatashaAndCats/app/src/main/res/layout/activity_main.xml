@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B0ABA7"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/left_up_image"
+        android:layout_width="334dp"
+        android:layout_height="297dp"
+        android:layout_marginLeft="-72dp"
+        android:layout_marginTop="-72dp"
+        android:rotation="120"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cat1" />
+
+    <ImageView
+        android:id="@+id/left_down_image"
+        android:layout_width="481dp"
+        android:layout_height="765dp"
+        android:layout_marginStart="-180dp"
+        android:layout_marginLeft="-180dp"
+        android:layout_marginBottom="-210dp"
+        android:rotation="50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/cat3" />
+
+    <ImageView
+        android:id="@+id/right_up_image"
+        android:layout_width="301dp"
+        android:layout_height="227dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="-85dp"
+        android:layout_marginRight="-85dp"
+        android:rotation="270"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cat2" />
+
+    <ImageView
+        android:id="@+id/right_down_image"
+        android:layout_width="455dp"
+        android:layout_height="429dp"
+        android:layout_marginEnd="-120dp"
+        android:layout_marginRight="-120dp"
+        android:layout_marginBottom="-200dp"
+        android:rotation="-60"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/cat4" />
+
+    <TextView
+        android:id="@+id/first_text"
+        android:layout_width="117dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:text="Наташ, ты спишь?"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/second_text"
+        android:layout_width="133dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="-80dp"
+        android:layout_marginRight="-80dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:text="Уже 6 часов утра, Наташ"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/right_up_image"
+        app:layout_constraintTop_toBottomOf="@+id/left_up_image" />
+
+    <TextView
+        android:id="@+id/third_text"
+        android:layout_width="169dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="-10dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:text="Вставай, мы там все уронили"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/fourth_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <TextView
+        android:id="@+id/fourth_text"
+        android:layout_width="151dp"
+        android:layout_height="81dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:text="Мы уронили вообще все, Наташ, честно"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/right_down_image"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
